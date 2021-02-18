@@ -640,7 +640,6 @@ public class CVComponentMessage: CVComponentBase, CVRootComponent {
         }
 
         componentView.rootView.accessibilityLabel = buildAccessibilityLabel(componentView: componentView)
-        
         componentView.rootView.isAccessibilityElement = true
         componentView.rootView.accessibilityTraits = buildAccessibilityTraits(componentView: componentView)
     }
@@ -982,6 +981,7 @@ public class CVComponentMessage: CVComponentBase, CVRootComponent {
             componentDelegate.cvc_didTapFailedOrPendingDownloads(message)
             return true
         }
+
         return false
     }
 
