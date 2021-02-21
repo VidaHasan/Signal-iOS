@@ -308,7 +308,7 @@ public class CVComponentMessage: CVComponentBase, CVRootComponent {
         var leadingView: UIView?
         if isShowingSelectionUI {
             owsAssertDebug(!isReusing)
-            
+
             let selectionView = componentView.selectionView
             selectionView.isSelected = componentDelegate.cvc_isMessageSelected(interaction)
             cellView.addSubview(selectionView)
